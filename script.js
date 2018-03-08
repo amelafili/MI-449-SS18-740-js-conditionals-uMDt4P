@@ -5,13 +5,13 @@ if (firstMessage === 'yes') {
   window.alert('Cool, I love turtles!')
 } else if (firstMessage === 'no') {
   window.alert('That\'s sad to hear. :(')
-} else if (firstMessage === 'i don\'t care') {
+} else if (firstMessage === 'I don\'t care') {
   window.alert('How though :(')
 } else {
   window.alert('Try again!')
 }
 
-var firstConfirm = (confirm('Can we keep going?'))
+var firstConfirm = (window.confirm('Can we keep going?'))
 if (firstConfirm) {
 }
 
@@ -30,13 +30,16 @@ if (secondMessage === 'sea' && 'land') {
 window.alert('Now let\'s see if you can get this second question!')
 
 var thirdMessage = window.prompt('Guess what a turtle\'s favorite number is :)').trim()
+
 if (thirdMessage) {
   window.alert('Trick question! It\'s actually ' + Math.random())
 }
 
 window.alert('The number you did enter though can be useful!')
-parseInt(thirdMessage)
+
 window.alert('Lets see if the number you entered is close to the age of the oldest turtle alive!')
+thirdMessage = parseInt(thirdMessage)
+
 if (thirdMessage > '100') {
   window.alert('Close!')
 } else if (thirdMessage < '100') {
