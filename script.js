@@ -21,7 +21,7 @@ window.alert('Let\'s do some turtle trivia then!')
 var secondMessage = window.prompt('Something simple first, turtles can live where?').trim()
 secondMessage = secondMessage.toLowerCase()
 
-if (secondMessage === 'sea' && 'land') {
+if (secondMessage === 'sea' || 'land') {
   window.alert('Right! One point for you :D')
 } else {
   window.alert('Here\'s a hint: one place is covered in water and starts with an S, while the other is covered in grass and starts with L!')
