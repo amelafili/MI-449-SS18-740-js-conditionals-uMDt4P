@@ -11,7 +11,10 @@ if (firstMessage === 'yes') {
   window.alert('Try again!')
 }
 
-window.confirm('Can we keep going?')
+var firstConfirm = window.confirm('Can we keep going?')
+
+if (firstConfirm === true) {
+}
 
 window.alert('Great, let\'s continue!')
 window.alert('Let\'s do some turtle trivia then!')
@@ -19,7 +22,7 @@ window.alert('Let\'s do some turtle trivia then!')
 var secondMessage = window.prompt('Something simple first, turtles can live where?') || ''
 secondMessage = secondMessage.toLowerCase().trim()
 
-if (secondMessage === 'sea' || 'land') {
+if (secondMessage === 'sea' || secondMessage === 'land') {
   window.alert('Right! One point for you :D')
 } else {
   window.alert('Here\'s a hint: one place is covered in water and starts with an S, while the other is covered in grass and starts with L!')
@@ -38,10 +41,12 @@ window.alert('The number you did enter though can be useful!')
 window.alert('Lets see if the number you entered is close to the age of the oldest turtle alive!')
 thirdMessage = parseInt(thirdMessage)
 
-if (thirdMessage > '100') {
+if (thirdMessage > 100) {
   window.alert('Close!')
-} else if (thirdMessage < '100') {
+} else if (thirdMessage < 100) {
   window.alert(thirdMessage + ' is too small of a number, but it\'s okay!')
+} else {
+  window.alert('Invalid value!')
 }
 
 window.alert('That\'s it. Thanks for playing 🐢')
