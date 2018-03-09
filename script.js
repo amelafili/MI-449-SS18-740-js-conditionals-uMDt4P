@@ -11,9 +11,7 @@ if (firstMessage === 'yes') {
   window.alert('Try again!')
 }
 
-var firstConfirm = (window.confirm('Can we keep going?'))
-if (firstConfirm) {
-}
+window.confirm('Can we keep going?')
 
 window.alert('Great, let\'s continue!')
 window.alert('Let\'s do some turtle trivia then!')
